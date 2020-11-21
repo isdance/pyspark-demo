@@ -41,6 +41,7 @@ ratings-counter.py
 from pyspark import SparkConf, SparkContext
 import collections
 
+# set master node on local machine, in this example we use single cpu and single thread
 conf = SparkConf().setMaster('local').setAppName('RatingsHistogram')
 sc = SparkContext(conf=conf)
 
